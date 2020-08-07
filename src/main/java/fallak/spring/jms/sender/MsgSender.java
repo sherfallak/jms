@@ -23,7 +23,7 @@ public class MsgSender {
                 .message("Hello world")
                 .build();
 
-        jmsTemplate.convertAndSend(JmsConfig.jms_Queue, message);
+        jmsTemplate.convertAndSend(JmsConfig.my_Queue, message);
         System.out.println("message sent");
     }
 }
